@@ -1,9 +1,9 @@
 import pygame, random, math, json, os
 pygame.init()
-WIDTH, HEIGHT = 2610, 1320
+WIDTH, HEIGHT = 1280,720
 GW, GH = 640, 360
 FPS = 60
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
+screen = pygame.display.set_mode((GW*4, GH*4), pygame.SCALED | pygame.RESIZABLE)
 pygame.display.set_caption("RETRO HERO - 16 BIT ADVENTURE")
 game = pygame.Surface((GW, GH))
 clock = pygame.time.Clock()
